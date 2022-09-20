@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="sass/style.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Todo app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+        
+        .drag {
+            position: absolute;
+            bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Todo</h1>
+            <div class="icon light">
+                <img src="images/icon-moon.svg" alt="icon" />
+            </div>
+        </div>
+        <div class="input">
+            <span></span>
+            <input type="text" placeholder="Currently typing " />
+        </div>
+        <div class="todos"></div>
+        <div class="footer">
+            <div class="counter"><span>0</span> items left</div>
+            <div class="filters">
+                <ul>
+                    <li class="active all">All</li>
+                    <li class="notComp">Active</li>
+                    <li class="comp">Completed</li>
+                </ul>
+            </div>
+            <div class="clearCompleted">Clear Completed</div>
+
+
+        </div>
+
+
+    </div>
+    <p class="drag">Drag and drop to reorder list</p>
+    </div>
+
+    <!-- Add dynamic number -->
+
+
+    <!-- <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a
+      >. Coded by <a href="https://mrcode93.netlify.app/">Amer Farhan Ahmed</a>.
+    </div> -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

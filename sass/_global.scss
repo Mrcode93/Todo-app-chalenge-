@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+//font
+$font: 'Josefin Sans',
+sans-serif;
+;
+//colors
+$brightBlue: hsl(220, 98%, 61%);
+$checkBackground: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+//### Light Theme
+//themes
+.light-theme {
+    --main-clr: $VeryLightGray;
+    --secondary-clr: $VeryLightGrayish;
+    --font-clr: $VeryDarkGrayish;
+    --active-clr: $VeryDarkGrayish;
+}
+
+.dark-theme {
+    --main-clr: $VeryDarkBlue;
+    --secondary-clr: $VeryDarkDesaturated;
+    --font-clr: $LightGrayishBlue;
+    --active-clr: $VeryDarkGrayishBlue;
+}
