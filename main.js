@@ -80,40 +80,40 @@ function counterItems() {
   counter.innerHTML = count;
 }
 
-function showDetails() {
-  let item = JSON.parse(localStorage.getItem("items"));
+// function showDetails() {
+//   let item = JSON.parse(localStorage.getItem("items"));
 
-  for (let i = 0; i < item.length; i++) {
-    let todo = document.createElement("div");
-    todo.className = "todo";
-    let span = document.createElement("span");
-    todo.appendChild(span);
-    let text = document.createElement("div");
-    text.className = "text";
-    text.textContent = item[i];
-    todo.appendChild(text);
-    let image = document.createElement("img");
-    image.src = "images/icon-cross.svg";
-    todo.appendChild(image);
-    todosContainer.appendChild(todo);
-    footer.style.display = "flex";
-    image.onclick = (e) => {
-      e.target.parentNode.remove();
-      let node = e.target.parentNode.innerText;
-      // console.log(node);
+//   for (let i = 0; i < item.length; i++) {
+//     let todo = document.createElement("div");
+//     todo.className = "todo";
+//     let span = document.createElement("span");
+//     todo.appendChild(span);
+//     let text = document.createElement("div");
+//     text.className = "text";
+//     text.textContent = item[i];
+//     todo.appendChild(text);
+//     let image = document.createElement("img");
+//     image.src = "images/icon-cross.svg";
+//     todo.appendChild(image);
+//     todosContainer.appendChild(todo);
+//     footer.style.display = "flex";
+//     image.onclick = (e) => {
+//       e.target.parentNode.remove();
+//       let node = e.target.parentNode.innerText;
+//       // console.log(node);
 
-      let locals = JSON.parse(localStorage.getItem("items"));
-      // console.log(locals);
-      locals.forEach((item) => {
-        if (item === node) {
-          locals = locals.filter((item) => item !== node);
-          console.log(locals);
-          localStorage.setItem("items", JSON.stringify(locals));
-        }
-      });
-    };
-  }
-}
+//       let locals = JSON.parse(localStorage.getItem("items"));
+//       // console.log(locals);
+//       locals.forEach((item) => {
+//         if (item === node) {
+//           locals = locals.filter((item) => item !== node);
+//           console.log(locals);
+//           localStorage.setItem("items", JSON.stringify(locals));
+//         }
+//       });
+//     };
+//   }
+// }
 
 //completed
 let spanComoleted = document.querySelectorAll(".todo span");
